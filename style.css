@@ -1,21 +1,23 @@
-html {
-    scroll-behavior: smooth;
+html,
+body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin: 0;
 }
+
 
 ::-webkit-scrollbar {
     display: none;
 }
 
 body {
-    height: 310vh;
+    height: 320vh;
     width: 100%;
     display: flex;
     background-color: black;
-    margin: 0;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
-    overflow-y: scroll;
 }
 
 header {
@@ -125,8 +127,7 @@ header img {
 .dropdown .items a:hover,
 .dropdown:hover { 
     font-size: 25px;
-    transition-behavior: smooth;
-    color: grey;
+    color: red;
 }
 
 section {
@@ -136,7 +137,7 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    scroll-snap-align: start
+    scroll-snap-align: start;
 }
 
 
@@ -154,22 +155,20 @@ section {
 }
 
 @media (max-aspect-ratio: 9/16) {
-    .video {
+    iframe {
         width: 75%;
         height: auto;
 }
 }
 
-
-.video{
+iframe{
     display: flex;
     height: 70%;
-    width: 100%;
-    justify-content: center;
+    width: 70%;
 }
 
 .description img {
-    clip-path: ellipse(50% 50% at 50% 50%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     height: 100%;
     width: 100%;
     opacity: 0.5;
@@ -177,12 +176,23 @@ section {
 }
 
 .description div {
-    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
     width: 75%;
-    text-align: center;
     z-index: 1;
-    text-wrap: 1;
-    align-self: center;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 20px;
 }
+
+.description h1 {
+    text-align: center;
+    margin: 2%;
+}
+
+
+
+
 
 
