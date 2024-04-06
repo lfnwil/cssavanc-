@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     height: 310vh;
     width: 100%;
@@ -7,6 +15,7 @@ body {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 header {
@@ -16,7 +25,7 @@ header {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to top, transparent, black);
+    background: linear-gradient(to top, transparent , black 100%);
     z-index: 10;
 }
 
@@ -44,8 +53,7 @@ header img {
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0px 1px dpx;
-    background: linear-gradient(to top, transparent, black);
+    background: linear-gradient(to top, transparent -25%, black 100%);
     transition: .5s;
     font-weight: bold;
 }
@@ -84,6 +92,7 @@ header img {
     overflow: hidden;
     visibility: hidden;
     transition: .5s;
+    
 }
 
 .dropdown.active .items {
@@ -106,6 +115,7 @@ header img {
     transition: .5s;
     transition-delay: calc(60ms * var(--i));
     font-weight: initial;
+    background: linear-gradient(to top, transparent -25%, black 100%);
 }
 
 .dropdown.active .items a {
@@ -114,7 +124,9 @@ header img {
 
 .dropdown .items a:hover,
 .dropdown:hover { 
-    color: #f00;
+    font-size: 25px;
+    transition-behavior: smooth;
+    color: grey;
 }
 
 section {
@@ -124,7 +136,10 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    scroll-snap-align: start
 }
+
+
 
 .accueil img{
     height: 100%;
@@ -137,6 +152,14 @@ section {
     flex-direction: column;
     font-size: 25px;
 }
+
+@media (max-aspect-ratio: 9/16) {
+    .video {
+        width: 75%;
+        height: auto;
+}
+}
+
 
 .video{
     display: flex;
