@@ -147,6 +147,14 @@ section {
     opacity: .7;
 }
 
+#logo {
+    position: absolute;
+    height: 30%;
+    width: auto;
+    z-index: 10;
+    opacity: .8;
+}
+
 .trailer {
     display: flex;
     flex-direction: column;
@@ -237,6 +245,10 @@ footer{
     .accueil img{   
         width: 100vw;
         height: auto;
+    }
+
+    #logo {
+        display: none;
     }
 
     .trailer {
