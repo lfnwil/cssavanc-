@@ -8,12 +8,16 @@ body {
 }
 
 body {
+    height: 400vh;
     width: 100%;
     display: flex;
     background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    margin: 0;
 }
 
 header {
@@ -129,4 +133,20 @@ h6:hover {
 
 .space {
     height: 5vh;
+}
+
+
+.incident  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.incident iframe {
+    width: 40%;
+    height: 50vh;
+}
+
+.abou iframe {
+    height: 70vh;
+    width: 70vw;
 }
