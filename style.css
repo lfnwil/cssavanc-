@@ -95,7 +95,6 @@ h2 { font-size: 20px;}
     overflow: hidden;
     visibility: hidden;
     transition: .5s;
-    
 }
 
 .dropdown.active .items {
