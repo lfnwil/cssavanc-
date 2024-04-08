@@ -219,6 +219,19 @@ footer{
 
 
 @media (max-width: 768px) {
+
+header {
+        justify-content: center;
+}
+
+header img {    
+    display: none;
+}
+
+.dropdown .items a {  
+    font-size: 15px;
+}
+
 body {
     height: auto; 
 }
