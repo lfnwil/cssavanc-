@@ -92,7 +92,6 @@ h2 { font-size: 20px;}
     overflow: hidden;
     visibility: hidden;
     transition: .5s;
-    
 }
 
 .dropdown.active .items {
@@ -228,9 +227,17 @@ header img {
     display: none;
 }
 
+.box {
+    font-size: 20px;
+    width: 50vw;
+    height: 75%;
+}
+
 .dropdown .items a {  
     font-size: 15px;
 }
+
+h2 { font-size: 20px;}
 
 body {
     height: auto; 
@@ -248,7 +255,7 @@ body {
 }
 
 .card {
-    height: 90%;
+    height: 95%;
     width: 85%;   
 }
 h3 {

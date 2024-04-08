@@ -265,8 +265,10 @@ header img {
     width: auto;
 }
 
+h6 { font-size: 25px;}
+
 @media (max-width: 768px) {
- 
+
     header {
         justify-content: center;
     }
@@ -275,23 +277,37 @@ header img {
         display: none;
     }
 
+    .box {
+        font-size: 20px;
+        width: 50vw;
+        height: 75%;
+    }
+
     .dropdown .items a {  
         font-size: 15px;
     }
 
-    section {
-        height: auto;
+    h6 { font-size: 20px;}
+
+    body {
+        height: auto; 
     }
 
-    
-.img-container img {
-    height: 20vh;
-    width: auto;
-    margin: 2vh;
-}
+
+
+    section {
+        height: auto;
+        justify-content: center
+    }
+
+    .III {
+            height: auto;
+            justify-content: center;
+        }
 
     
-    #card {
+
+    #cards {
         height: auto;
         width: 85%;   
     }
@@ -299,8 +315,34 @@ header img {
     #cards img {
         height: 15vh;
     }
+    .s3 {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-container {
+            width: 100%;
+        }
+
+        .img-container  {
+            display: none;
+        }
+
+        .incident {
+            height: auto;
+        }
+
 
     h3 {
         font-size: 15px;
+    }
+
+    img {
+        display: none;
+    }
+
+    iframe {
+        height: auto;
+        width: auto;
     }
     }
