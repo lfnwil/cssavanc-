@@ -293,27 +293,21 @@ h6 { font-size: 25px;}
         height: auto; 
     }
 
-    .grid-container { 
-        display: grid;
-        grid-template-columns: 1fr;
-        height: auto; 
-        width: 100vw;
-    }
 
 
     section {
         height: auto;
+        justify-content: center
     }
 
-        
-    .img-container img {
-        height: 20vh;
-        width: auto;
-        margin: 2vh;
-    }
+    .III {
+            height: auto;
+            justify-content: center;
+        }
 
     
-    #card {
+
+    #cards {
         height: auto;
         width: 85%;   
     }
@@ -321,8 +315,34 @@ h6 { font-size: 25px;}
     #cards img {
         height: 15vh;
     }
+    .s3 {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-container {
+            width: 100%;
+        }
+
+        .img-container  {
+            display: none;
+        }
+
+        .incident {
+            height: auto;
+        }
+
 
     h3 {
         font-size: 15px;
+    }
+
+    img {
+        display: none;
+    }
+
+    iframe {
+        height: auto;
+        width: auto;
     }
     }
